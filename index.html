@@ -86,17 +86,30 @@
             var video1 = document.getElementById("video1");
             var video2 = document.getElementById("video2");
             var video3 = document.getElementById("video3");
+            
+
+            var mediaArray1 = new Array();
             var video4 = document.getElementById("video4");
             var video5 = document.getElementById("video5");
             var video6 = document.getElementById("video6");
       
             function onClickWebM(){
+              video2.style.visibility = "hidden";
+              video3.style.visibility = "hidden";
+              video4.style.visibility = "hidden";
+              video5.style.visibility = "hidden";
+              video6.style.visibility = "hidden";
               video1.style.visibility = "visible";
               video1.style.zIndex = "1";
               video1.play();
             }
 
             function onClickMP4(){
+              video1.style.visibility = "hidden";
+              video2.style.visibility = "hidden";
+              video3.style.visibility = "hidden";
+              video5.style.visibility = "hidden";
+              video6.style.visibility = "hidden";
               video4.style.visibility = "visible";
               video4.style.zIndex = "1";
               video4.play();
