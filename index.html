@@ -15,10 +15,9 @@
         <style>
           #video1, #video2, #video3, #video4, #video5, #video6, #video7, #video8, #video9, #video10, picture, img{
             height: 100%;
-            width: 90%;
+            width: 100%;
             display: block;
             position: absolute;
-            right: 0;
           }
       
             div{
@@ -122,28 +121,22 @@
           
       
             function onClickWebM(){
-              video2.style.visibility = "hidden";
-              video3.style.visibility = "hidden";
-              video4.style.visibility = "hidden";
-              video5.style.visibility = "hidden";
-              video6.style.visibility = "hidden";
-              video7.style.visibility = "hidden";
-              video8.style.visibility = "hidden";
-              video9.style.visibility = "hidden";
+              video6.pause();
+              video7.pause();
+              video8.pause();
+              video9.pause();
+              video10.pause();
               video1.style.visibility = "visible";
               video1.style.zIndex = "1";
               video1.play();
             }
 
             function onClickMP4(){
-              video1.style.visibility = "hidden";
-              video2.style.visibility = "hidden";
-              video3.style.visibility = "hidden";
-              video4.style.visibility = "hidden";
-              video5.style.visibility = "hidden";
-              video7.style.visibility = "hidden";
-              video8.style.visibility = "hidden";
-              video9.style.visibility = "hidden";
+              video1.pause();
+              video2.pause();
+              video3.pause();
+              video4.pause();
+              video5.pause();
               video6.style.visibility = "visible";
               video6.style.zIndex = "1";
               video6.play();
